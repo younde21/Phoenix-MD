@@ -6,7 +6,7 @@ if (fs.existsSync("config.env"))
 const toBool = (x) => x == "true";
 
 DATABASE_URL = process.env.DATABASE_URL || "./lib/database.db";
-let HANDLER = "false";
+let HANDLER = "true";
 
 module.exports = {
   //For Enabling Commands Like AUTO_STATUS_RED Type true For Disenabling Type false
@@ -20,13 +20,13 @@ module.exports = {
   //_________________________________________________________________________________________________________________________________
   AUDIO_DATA: process.env.AUDIO_DATA || "Phoenix-MD;Abhishek Suresh;https://graph.org/file/8976892f2f615077b48cd.jpg",
   //_________________________________________________________________________________________________________________________________
-  AUTO_STATUS_READ: process.env.AUTO_STATUS_READ || 'false',
+  AUTO_STATUS_READ: process.env.AUTO_STATUS_READ || 'true',
   //_________________________________________________________________________________________________________________________________
   SESSION_ID: process.env.SESSION_ID || "Phoenix~7dddc08a0cab5849fd28b89b971dbe3d", //Enter Your Session Id Here
   //_________________________________________________________________________________________________________________________________
   SUDO: process.env.SUDO || "919074692450",
   //_________________________________________________________________________________________________________________________________
-  SPAM_COUNT: process.env.SPAM_COUNT || "10",
+  SPAM_COUNT: process.env.SPAM_COUNT || "3",
   //_________________________________________________________________________________________________________________________________
   LANG: process.env.LANG || "EN",
   //_________________________________________________________________________________________________________________________________
